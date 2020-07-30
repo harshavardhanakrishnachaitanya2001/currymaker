@@ -91,12 +91,45 @@ function Bananna(){
             </div>
         )
     }
+        const BananaCurry=()=>{
+            return (
+                <div>
+                    <h1 style={{color:"white"}}>Banana Curry</h1>
+                    <h2 style={{color:"white"}}>Ingredients</h2>
+                    <ol style={{color:"yellow"}}>
+                        <li>500 gms Raw Banana</li>
+                        <li>2 Onion Chopped</li>
+                        <li>3 Tomato (make puree)</li>
+                        <li>2 Green Chili Chopped</li>
+                        <li>8 Cloves Garlic Chopped</li>
+                        <li>as needed Coriander Leaves  Chopped</li>
+                        <li>1 Tsp Cumin Seeds</li>
+                        <li>1/2 Tsp Red Chili Powder</li>
+                        <li>1/4 Tsp Turmeric Powder</li>
+                        <li>1 Tsp Coriander Powder</li>
+                        <li>1/4 Tsp Garam Masala Powder</li>
+                        <li>as per taste Salt</li>
+                        <li>2 Tsp Curd (Optional)</li>
+                        <li>2 Tbs Oil</li>
+                    </ol>
+                    <h2 style={{color:"white"}}>Steps:</h2>
+                    <ol style={{color:"green"}}>
+                        <li>Wash bananas, then peel and cut into 1 inch pieces. Now heat oil in a pan add bananas and shallow fry for 5 minutes and take them out. In the remaining oil add cumin seeds, onion, garlic and sauté till light brown.</li>
+                        <li>Add turmeric powder, red chili powder, coriander powder, green chili, tomato puree and cook for 5 minutes.</li>
+                        <li>Then add bananas, salt, 2 cup water and mix well. Cover it and cook for 10 minutes on low flame. Sprinkle garam masala and add 2 tsp curd(optional) and mix it well.</li>
+                        <li>Garnish with coriander leaves.</li>
+                    </ol>
+                </div>
+            )
+        }
     return (
         <Router>
             <Link to="BananaKofta"><button>Banana Kofta</button></Link>
-            <Link to="BananaCurry"><button>Banana Chips</button></Link>
+            <Link to="BananaChips"><button>Banana Chips</button></Link>
+            <Link to="/BananaCurry"><button>Banana Curry</button></Link>
             <Route path="/BananaKofta" component={BananaKofta}/>
-            <Route path="/BananaCurry" component={BananaChips}/>
+            <Route path="/BananaChips" component={BananaChips}/>
+            <Route path="/BananaCurry" component={BananaCurry}/>
         </Router>
 
     )
