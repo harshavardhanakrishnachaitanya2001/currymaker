@@ -64,17 +64,39 @@ function Bananna(){
             </div>
         )
     }
-    const BananaCurry=()=>{
+    const BananaChips=()=>{
         return (
-            <h2 style={{color:"white"}}>Banana Curry</h2>
+            <div>
+                <h1 style={{color:"white"}}>Banana Chips</h1>
+                <h2 style={{color:"white"}}>Ingredients</h2>
+                <ol style={{color:"yellow"}}>
+                    <li>4 green (unripe) plantains (sliced into thin rounds and washed), peeled</li>
+                    <li>2 cups of coconut oil</li>
+                    <li>3 cups of water</li>
+                    <li>1 tsp of turmeric</li>
+                    <li>1 tbsp of chili powder</li>
+                    <li>salt. As per taste</li>
+                </ol>
+                <h2 style={{color:"white"}}>Steps:</h2>
+                <ol style={{color:"green"}}>
+                    <li>Put the slices of banana into a solution of water, salt and turmeric and let sit for 5 minutes.</li>
+                    <li>Give it a good mix and transfer to a colander to drain completely.</li>
+                    <li>In a medium sized kadai on high heat, heat the oil.</li>
+                    <li>When it starts smoking, add the slices in small batches</li>
+                    <li>Fry until golden and transfer onto a paper napkin</li>
+                    <li>Repeat with the rest of the slices.</li>
+                    <li>Sprinkle with salt and chilli powder and let it cool.</li>
+                    <li>Store in an air-tight container for up to a week.</li>
+                </ol>
+            </div>
         )
     }
     return (
         <Router>
             <Link to="BananaKofta"><button>Banana Kofta</button></Link>
-            <Link to="BananaCurry"><button>Banana Curry</button></Link>
+            <Link to="BananaCurry"><button>Banana Chips</button></Link>
             <Route path="/BananaKofta" component={BananaKofta}/>
-            <Route path="/BananaCurry" component={BananaCurry}/>
+            <Route path="/BananaCurry" component={BananaChips}/>
         </Router>
 
     )
