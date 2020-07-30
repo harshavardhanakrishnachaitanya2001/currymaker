@@ -73,12 +73,49 @@ function Aloo(){
             </div>
         )
     }
+    const DumAloo=()=>{
+        return (
+            <div>
+                <h1 style={{color:"white"}}>Dum Aloo</h1>
+                <h2>Ingredients</h2>
+                <ol style={{color:"yellow"}}>
+                    <li>1 pound baby potatoes</li>
+                    <li>oil for frying the potatoes</li>
+                    <li>2 tablespoons oil for frying caraway seeds</li>
+                    <li>1 tsp caraway seeds/shahjeera</li>
+                    <li>¼ teaspoons asafoetida/hing</li>
+                    <li>1 tablespoon kashmiri red chili powder or deghi mirch (if using a hotter variety of red chili powder then reduce the quantity as required)</li>
+                    <li>4 to 5 tablespoons curd/yogurt, beaten</li>
+                    <li>2 black cardamoms</li>
+                    <li>1 inch cinnamon stick</li>
+                    <li>2-3 whole cloves</li>
+                    <li>3-4 black peppercorns</li>
+                    <li>1 tablespoon fennel seeds powder/saunf powder</li>
+                    <li>½ tablespoon ginger powder/saunth powder</li>
+                    <li>1.5 cups water</li>
+                    <li>salt to taste</li>
+                    <li>caraway seeds for garnish</li>
+                </ol>
+                <ol style={{color:"green"}}>
+                    <li>Pre-cook the potatoes. Wash the baby potatoes well to remove all dirt, then wipe them dry. If the potatoes are small, leave them whole. If they're larger, cut them in halves or quarters. Par-boil the potatoes so that they are somewhat cooked, but not completely cooked. This should take 6 to 7 minutes. Drain the potatoes and wipe them dry. Prick them all over with a fork</li>
+                    <li>Fry the potatoes. Heat your oil in a deep fryer or shallow skillet over medium-high heat. Add the potatoes and fry them until they're completely cooked. Remove them and set aside</li>
+                    <li>Cook your spices. In a large skillet, heat 2 tablespoons of oil over medium-high heat and add the caraway seeds. Cook until they start to sizzle in the oil. Reduce the heat to medium and add the asafoetida, fennel powder, and chili powder, stirring well. Add 2 tablespoons of water and let the spices cook for a minute</li>
+                    <li>Add the curd or yogurt. Stir or whisk the curd or yogurt into your mixture until no lumps remain. Let the mixture start to boil</li>
+                    <li>Add your remaining spices and potatoes. Add the whole cardamom, cinnamon stick, cloves, black peppercorns, ginger powder, fennel powder, fried potatoes, water, and salt. Stir the mixture well</li>
+                    <li>Cook the mixture. Cover the mixture with a lid and let it simmer, or gently bubble, for 10 to 15 minutes. The mixture should start to thicken up into a gravy.</li>
+                    <li>Garnish and serve. Sprinkle extra caraway seeds on top as a garnish and serve along with rice, rotis, or naan</li>
+                </ol>
+            </div>
+        )
+    }
     return (
         <Router>
         <Link to="spicyPotato"><button>Spicy Potato</button></Link>
         <Link to="AlooMatar"><button>Aloo matar</button></Link>
+        <Link to="DumAloo"><button>Dum Aloo</button></Link>
         <Route path="/SpicyPotato" component={spicyPotato} />
         <Route path="/AlooMatar" component={AlooMatar}/>
+        <Route path="/DumAloo" component={DumAloo}/>
         </Router>
     )
 }
