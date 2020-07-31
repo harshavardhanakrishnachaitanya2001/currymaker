@@ -36,7 +36,7 @@ function App(){
     return (
         <Router>
             <Body>
-                <PageHeading>Curry Point</PageHeading>
+                <PageHeading>Curry Maker</PageHeading>
                 <Link to="Tomato"><Button>Tomato</Button></Link>
                 <Link to="/Beatroot"><Button>Beatroot</Button></Link>
                 <Link to="/Aloo"><Button>Aloo</Button></Link>
