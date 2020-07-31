@@ -77,7 +77,7 @@ function Aloo(){
         return (
             <div>
                 <h1 style={{color:"white"}}>Dum Aloo</h1>
-                <h2>Ingredients</h2>
+                <h2 style={{color:"white"}}>Ingredients</h2>
                 <ol style={{color:"yellow"}}>
                     <li>1 pound baby potatoes</li>
                     <li>oil for frying the potatoes</li>
@@ -96,6 +96,7 @@ function Aloo(){
                     <li>salt to taste</li>
                     <li>caraway seeds for garnish</li>
                 </ol>
+                <h2 style={{color:"white"}}>Steps:</h2>
                 <ol style={{color:"green"}}>
                     <li>Pre-cook the potatoes. Wash the baby potatoes well to remove all dirt, then wipe them dry. If the potatoes are small, leave them whole. If they're larger, cut them in halves or quarters. Par-boil the potatoes so that they are somewhat cooked, but not completely cooked. This should take 6 to 7 minutes. Drain the potatoes and wipe them dry. Prick them all over with a fork</li>
                     <li>Fry the potatoes. Heat your oil in a deep fryer or shallow skillet over medium-high heat. Add the potatoes and fry them until they're completely cooked. Remove them and set aside</li>
@@ -108,14 +109,49 @@ function Aloo(){
             </div>
         )
     }
+    const AlooChips=()=>{
+        return (
+            <div>
+                <h1 style={{color:"white"}}>Aloo Chips</h1>
+                <h2 style={{color:"white"}}>Ingredients</h2>
+                <ol style={{color:"yellow"}}>
+                    <li>4 russet potatoes</li>
+                    <li>1 quart oil</li>
+                    <li>3 tablespoons sea salt</li>
+                    <li>Any additional seasonings, such as cayenne pepper, curry powder, etc</li>
+                </ol>
+                <h2 style={{color:"white"}}>Steps:</h2>
+                <ol style={{color:"green"}}>
+                    <li>Slice your potatoes to your desired thickness. You can cut your potatoes by hand if you want, but a far more efficient — and probably more effective — way of slicing 
+                    them would be to use:
+                    <ul>
+                        <li>A food processor slicing attachment</li>
+                        <li>A mandoline slicer (be very careful!)</li>    
+                    </ul></li>
+                    <li>Add 3 tablespoons of salt to a large bowl of water and soak your sliced potatoes in the salt water for half an hour. After they've soaked for 30 minutes, rinse them in a colander, then rinse them again and let dry.</li>
+                    <li>Choose an oil you'd like to fry with. While vegetable, safflower, corn, or peanut oil are all perfectly viable options, many people are increasingly turning to olive oil because it contains no trans fats.[1] Since deep-frying is already the least healthy method of cooking potato chips, it might be a good idea to use the healthiest oil you can get.</li>
+                    <li>Heat your oil in a deep fryer or a large frying pan until it reaches about 350° to 375° F (177° to 190° C). Optimally, use about a quart of oil. At the bare minimum, cover the bottom of your pan with an inch of oil.
+                        <ul>
+                            <li>Use a candy thermometer to check the temperature of your oil. If you need to eyeball things because you don't own a candy thermometer, stick the end of a wooden spoon into the oil and wait for bubbles to start forming at the end of the spoon</li>
+                            <li>Another way to check the temperature of oil without a thermometer is by frying a small cube of bread. Bread will turn a golden hue at 320° F after 30 seconds; 355° F after 15 seconds; and 375° F after 10 seconds</li>
+                        </ul>
+                    </li>
+                    <li>Cook your potatoes in small batches, removing when they start to turn golden brown. Cooking your potatoes all at once can drop the temperature of the oil too far too quickly.</li>
+                    <li>Once removed, put the chips on a plate with a paper towel over it to absorb the oil. If desired, season immediately.</li>
+                </ol>
+            </div>
+        )
+    }
     return (
         <Router>
         <Link to="spicyPotato"><button>Spicy Potato</button></Link>
         <Link to="AlooMatar"><button>Aloo matar</button></Link>
         <Link to="DumAloo"><button>Dum Aloo</button></Link>
+        <Link to="AlooChips"><button>Aloo Chips</button></Link>
         <Route path="/SpicyPotato" component={spicyPotato} />
         <Route path="/AlooMatar" component={AlooMatar}/>
         <Route path="/DumAloo" component={DumAloo}/>
+        <Route path="/AlooChips" component={AlooChips}/>
         </Router>
     )
 }
